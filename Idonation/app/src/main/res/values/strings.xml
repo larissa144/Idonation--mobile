@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Idonation</string>
+    <string name="name_doador"> Doador </string>
+    <string name="name_ong"> ONG </string>
+    <string name="name_acessConta"> Acessar conta </string>
+    <string name="name_criarConta"> Criar conta </string>
+    <string name="name_pf"> Pessoa Física</string>
+    <string name="name_pj"> Pessoa Jurídica </string>
 </resources>
