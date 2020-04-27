@@ -6,4 +6,12 @@
     <string name="name_criarConta"> Criar conta </string>
     <string name="name_pf"> Pessoa Física</string>
     <string name="name_pj"> Pessoa Jurídica </string>
+    <string name="name_cadastro">Nome completo</string>
+    <string name="name_instituicao">Razão social</string>
+    <string name="name_cpf">CPF</string>
+    <string name="name_cnpf">CNPJ</string>
+    <string name="name_email">E-mail</string>
+    <string name="name_senha">Senha</string>
+    <string name="name_confirmarSenha">Confirmar senha</string>
+    <string name="name_submit">Enviar</string>
 </resources>

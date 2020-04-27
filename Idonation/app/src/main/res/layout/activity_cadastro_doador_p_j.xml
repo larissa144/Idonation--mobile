@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastroDoadorPJ"
+    android:background="@color/BackgroundColor"
+    >
+
+    <ImageView
+        android:layout_width="276dp"
+        android:layout_height="176dp"
+        android:id="@+id/imgheart"
+        android:src="@drawable/logo_core"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/criarContaPJ"
+        android:text="@string/name_criarConta"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/imgheart"
+        />
+    <View
+        android:layout_width="333dp"
+        android:layout_height="440dp"
+        android:id="@+id/rectangle_4"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rectangle_4"
+        app:layout_constraintTop_toTopOf="@id/criarContaPJ"
+        app:layout_constraintRight_toLeftOf="@id/criarContaPJ"
+        app:layout_constraintLeft_toRightOf="@id/criarContaPJ"
+
+        />
+
+  <EditText
+       android:id="@+id/razaoSocialPJ"
+       android:layout_width="310dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="80dp"
+       android:text="@string/name_instituicao"
+       android:textSize="20sp"
+       android:alpha="0.4"
+       app:layout_constraintTop_toTopOf="@id/criarContaPJ"
+       app:layout_constraintRight_toLeftOf="@id/criarContaPJ"
+       app:layout_constraintLeft_toRightOf="@id/criarContaPJ"
+      />
+
+    <EditText
+        android:id="@+id/cnpjPJ"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/name_cnpf"
+        android:textSize="20sp"
+        android:alpha="0.4"
+        app:layout_constraintTop_toTopOf="@id/razaoSocialPJ"
+        app:layout_constraintRight_toLeftOf="@id/criarContaPJ"
+        app:layout_constraintLeft_toRightOf="@id/criarContaPJ"
+        />
+
+    <EditText
+        android:id="@+id/emailPJ"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/name_email"
+        android:textSize="20sp"
+        android:alpha="0.4"
+        app:layout_constraintTop_toTopOf="@id/cnpjPJ"
+        app:layout_constraintRight_toLeftOf="@id/criarContaPJ"
+        app:layout_constraintLeft_toRightOf="@id/criarContaPJ"
+        />
+
+    <EditText
+        android:id="@+id/senhaPJ"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/name_senha"
+        android:textSize="20sp"
+        android:alpha="0.4"
+        app:layout_constraintTop_toTopOf="@id/emailPJ"
+        app:layout_constraintRight_toLeftOf="@id/criarContaPJ"
+        app:layout_constraintLeft_toRightOf="@id/criarContaPJ"
+        />
+    <EditText
+        android:id="@+id/confirmarSenhaPJ"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/name_confirmarSenha"
+        android:textSize="20sp"
+        android:alpha="0.4"
+        app:layout_constraintTop_toTopOf="@id/senhaPJ"
+        app:layout_constraintRight_toLeftOf="@id/criarContaPJ"
+        app:layout_constraintLeft_toRightOf="@id/criarContaPJ"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:textSize="20sp"
+        android:text="@string/name_submit"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorButtons"
+        app:layout_constraintTop_toTopOf="@id/confirmarSenhaPJ"
+        app:layout_constraintRight_toLeftOf="@id/confirmarSenhaPJ"
+        app:layout_constraintLeft_toRightOf="@id/confirmarSenhaPJ"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
