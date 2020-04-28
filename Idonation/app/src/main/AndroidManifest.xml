@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".CadOngPartUm"></activity>
+=======
+        <activity android:name=".login_ong"></activity>
+        <activity android:name=".login_cnpj" />
+        <activity android:name=".login_cpf" />
+>>>>>>> 87eb29fb3b62eb5ace16646add6628c13e825938
         <activity android:name=".cadastroDoadorPJ" />
         <activity android:name=".cadastroDoador" />
         <activity android:name=".cad_doadro_pass1" />

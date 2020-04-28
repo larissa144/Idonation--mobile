@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_cnpj"
+    android:background="#E1EC5BAB">
+
+
+    <ImageView
+        android:layout_width="276dp"
+        android:layout_height="176dp"
+        android:id="@+id/imgCore"
+        android:src="@drawable/logo_core"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/botao_login2"
+        android:gravity="center_vertical"
+        android:text="@string/name_criarConta"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@id/imgCore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imgCore"
+        android:background="@drawable/botao_login1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="105dp"
+        android:text="@string/name_acessConta"
+        android:textSize="12dp"
+        android:id="@+id/btnConta"
+        />
+
+
+    <ImageView
+        android:layout_width="323dp"
+        android:layout_height="385dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConta"
+        android:layout_marginTop="45dp"
+        android:id="@+id/card_login"
+        android:background="@drawable/card_login"
+        />
+
+
+
+    <EditText
+        android:id="@+id/inputLogin"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnConta"
+        app:layout_constraintLeft_toLeftOf="@id/card_login"
+        android:layout_marginBottom="31dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="110dp"
+        android:hint="CNPJ"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/inputLogin2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        app:layout_constraintTop_toBottomOf="@id/inputLogin"
+        app:layout_constraintLeft_toLeftOf="@id/card_login"
+        android:layout_marginBottom="31dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textPersonName"
+        android:hint="Senha"
+        android:textSize="18sp" />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputLogin2"
+        app:layout_constraintLeft_toLeftOf="@id/card_login"
+        android:text="Esqueci a senha"
+        android:textColor="#E91E63"
+        android:layout_marginStart="190dp"
+        android:textSize="13sp"
+        android:id="@+id/textEsqueciSenha"
+        />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textEsqueciSenha"
+        app:layout_constraintLeft_toRightOf="@id/card_login"
+        android:layout_marginRight="188dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/checkboxLogin"
+        android:background="@drawable/select_login"
+        />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textEsqueciSenha"
+        app:layout_constraintLeft_toLeftOf="@id/checkboxLogin"
+        android:text="Sou Pessoa Fisica"
+        android:textColor="#000"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:id="@+id/textSouPessoaFisica"
+        />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxLogin"
+        app:layout_constraintLeft_toRightOf="@id/card_login"
+        android:layout_marginRight="188dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/checkboxLogin2"
+        android:background="@drawable/select_login"
+        />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textSouPessoaFisica"
+        app:layout_constraintLeft_toLeftOf="@id/checkboxLogin2"
+        android:text="Sou Pessoa Juridica"
+        android:textColor="#000"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="19dp"
+        android:textSize="14sp"
+        android:id="@+id/textSouPessoaJuridica"
+        />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="820dp"
+        android:background="@drawable/btn_entrar_login"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/textEsqueciSenha"
+        app:layout_constraintLeft_toLeftOf="@id/card_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Entrar"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
