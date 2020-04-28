@@ -117,7 +117,4 @@
         app:layout_constraintLeft_toRightOf="@id/confirmarSenhaPJ"
         />
 
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,5 +13,14 @@
     <string name="name_email">E-mail</string>
     <string name="name_senha">Senha</string>
     <string name="name_confirmarSenha">Confirmar senha</string>
+    <string name="name_categoria">Categoria</string>
+    <string-array name="name_categoriaitem">
+        <item>Todos</item>
+        <item>Crianças</item>
+        <item>Jovens</item>
+        <item>Adultos</item>
+        <item>Idosos</item>
+    </string-array>
+    <string name="name_descricao">Descrição</string>
     <string name="name_submit">Enviar</string>
 </resources>
