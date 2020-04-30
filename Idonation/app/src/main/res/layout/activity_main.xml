@@ -27,6 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rectangle_8"
         android:layout_marginTop="50dp"
+        android:onClick="irTelaDoador"
         android:text="@string/name_doador"
         android:textSize="15sp"
         android:id="@+id/btnDoador"
@@ -56,6 +57,7 @@
         android:textSize="15sp"
         android:id="@+id/btnOng"
         android:background="@drawable/botao_config"
+        android:onClick="irTelaOng"
         />
 
 

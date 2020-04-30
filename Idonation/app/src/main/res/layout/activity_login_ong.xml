@@ -26,6 +26,7 @@
         android:background="@drawable/botao_login2"
         android:gravity="center_vertical"
         android:text="@string/name_criarConta"
+        android:onClick="irTelaCriarContaOng"
         android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="@id/imgCore"
         app:layout_constraintEnd_toEndOf="parent"
