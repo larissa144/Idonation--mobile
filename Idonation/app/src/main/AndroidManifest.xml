@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.idonation">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".CadOngPartUm"></activity>
-
-        <activity android:name=".login_ong"></activity>
+        <activity android:name=".Tela_teste"></activity>
+        <activity android:name=".CadOngPartUm" />
+        <activity android:name=".login_ong" />
         <activity android:name=".login_cnpj" />
         <activity android:name=".login_cpf" />
-
         <activity android:name=".cadastroDoadorPJ" />
         <activity android:name=".cadastroDoador" />
         <activity android:name=".cad_doadro_pass1" />
