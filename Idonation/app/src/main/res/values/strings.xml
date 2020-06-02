@@ -23,4 +23,11 @@
     </string-array>
     <string name="name_descricao">Descrição</string>
     <string name="name_submit">Enviar</string>
+    <string name="name_doar">Vamos doar? :)</string>
+    <string name="name_fazerdoacao"> Fazer doação </string>
+    <string name="name_publidoacao"> Publicar doação</string>
+    <string name="name_editPerfil"> Editar perfil</string>
+    <string name="name_desatConta"> Desativar conta</string>
+    <string name="name_sairConta"> Sair </string>
+    <string name="name_configuracoes"> Configurações</string>
 </resources>

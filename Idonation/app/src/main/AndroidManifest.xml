@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tela_teste"></activity>
+        <activity android:name=".Configuracoes"></activity>
+        <activity android:name=".TipoDoacao" />
+        <activity android:name=".Tela_teste" />
         <activity android:name=".CadOngPartUm" />
         <activity android:name=".login_ong" />
         <activity android:name=".login_cnpj" />

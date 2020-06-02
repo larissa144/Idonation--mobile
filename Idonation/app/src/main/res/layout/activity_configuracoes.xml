@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configuracoes"
+    android:background="#E1EC5BAB">
+
+    <EditText
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:background="@drawable/fundo_config"
+        android:id="@+id/txtMenu"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:id="@+id/imgMenu"
+        android:src="@drawable/idonation_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/fundo_config2"
+        android:id="@+id/divConfig"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_configuracoes"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:textColor="#C1753F68"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/btn_config"
+        android:id="@+id/btnEditPerfil"
+        android:text="@string/name_editPerfil"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnEditPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/btn_config"
+        android:id="@+id/btnCancelConta"
+        android:text="@string/name_desatConta"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnCancelConta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_config"
+        android:id="@+id/btnSairConta"
+        android:text="@string/name_sairConta"
+        android:textSize="15sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
