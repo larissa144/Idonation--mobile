@@ -34,4 +34,12 @@
     <string name="name_btn_outros">Outros</string>
     <string name="name_btn_curtir">Curtir</string>
     <string name="name_btn_proximo">Próximo</string>
+    <string name="name_btn_like">Like</string>
+    <string name="name_publicacoes">Publicações: </string>
+    <string name="name_doacao">Doação</string>
+    <string name="name_like">Like</string>
+    <string name="name_bnt_excluir">Excluir </string>
+    <string name="nmr_like">{Like}</string>
+    <string name="name_tipoCategoria">{Categoria}</string>
+    <string name="name_tipoDoacao">{Doacao}</string>
 </resources>

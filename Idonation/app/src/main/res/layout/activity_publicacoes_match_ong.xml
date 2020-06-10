@@ -82,9 +82,4 @@
         android:background="@drawable/botao_config"
         />
 
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

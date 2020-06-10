@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".publicacoesMatchOng"></activity>
+        <activity android:name=".Outros"></activity>
+        <activity android:name=".home1_doador" />
+        <activity android:name=".publicacoesMatchOng" />
         <activity android:name=".Home1Ongs" />
         <activity android:name=".Configuracoes" />
         <activity android:name=".TipoDoacao" />
