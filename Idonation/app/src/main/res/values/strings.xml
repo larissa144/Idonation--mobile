@@ -30,4 +30,8 @@
     <string name="name_desatConta"> Desativar conta</string>
     <string name="name_sairConta"> Sair </string>
     <string name="name_configuracoes"> Configurações</string>
+    <string name="name_btn_match">Match</string>
+    <string name="name_btn_outros">Outros</string>
+    <string name="name_btn_curtir">Curtir</string>
+    <string name="name_btn_proximo">Próximo</string>
 </resources>

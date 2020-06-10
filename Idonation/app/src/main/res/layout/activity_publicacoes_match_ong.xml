@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".publicacoesMatchOng"  android:background="#E1EC5BAB">
+
+    <EditText
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:background="@drawable/fundo_config"
+        android:id="@+id/txtMenu"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:id="@+id/imgMenu"
+        android:src="@drawable/idonation_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/fundo_config2"
+        android:id="@+id/divConfig"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{FOTOS DOADORES}"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:textColor="#C1753F68"
+        android:layout_marginTop="190dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        android:layout_marginTop="470dp"
+        android:textSize="27sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="{DESCRIÇÃO DA DOAÇÃO}"
+        android:id="@+id/textDescription"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescription"
+        android:layout_marginTop="20dp"
+        android:text="@string/name_btn_curtir"
+        android:textSize="15sp"
+        android:id="@+id/btnOng"
+        android:background="@drawable/botao_config"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOng"
+        android:layout_marginTop="20dp"
+        android:text="@string/name_btn_proximo"
+        android:textSize="15sp"
+        android:id="@+id/btnOngProximo"
+        android:background="@drawable/botao_config"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

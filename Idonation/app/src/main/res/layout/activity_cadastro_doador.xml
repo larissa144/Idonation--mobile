@@ -121,7 +121,7 @@
         android:textSize="20sp"
         android:text="@string/name_submit"
         android:textColor="@color/colorWhite"
-        android:background="@color/colorButtons"
+        android:background="@drawable/btn_border_radius"
         app:layout_constraintTop_toTopOf="@id/confirmarSenhaPF"
         app:layout_constraintRight_toLeftOf="@id/confirmarSenhaPF"
         app:layout_constraintLeft_toRightOf="@id/confirmarSenhaPF"
