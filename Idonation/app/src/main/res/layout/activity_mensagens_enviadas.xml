@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/fundo_1">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_1"
+    tools:context=".mensagens_enviadas">
+
 
     <EditText
         android:layout_width="412dp"
@@ -58,7 +60,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="55dp"
         />
 
     <ImageView
@@ -70,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="55dp"
         android:layout_marginRight="240dp"
         />
 
@@ -84,14 +86,14 @@
         android:id="@+id/textDoador2"
         android:textSize="18sp"
         android:textColor="#E91E63"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="85dp"
         android:layout_marginRight="10dp"
         tools:ignore="DuplicateIds" />
 
     <Button
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="120dp"
         android:textSize="16sp"
         android:layout_marginLeft="320dp"
         android:text="X"
@@ -107,6 +109,5 @@
         app:layout_constraintTop_toTopOf="@id/cadMensagensEnviadas"
         android:layout_marginTop="591dp"
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

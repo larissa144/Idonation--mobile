@@ -11,7 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Outros"></activity>
+        <activity android:name=".mensagens_enviadas"></activity>
+        <activity android:name=".match" />
+        <activity
+            android:name=".doacoes_de_interesse"
+            android:label="@string/title_activity_doacoes_de_interesse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".k"
+            android:label="@string/title_activity_k"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Outros" />
         <activity android:name=".home1_doador" />
         <activity android:name=".publicacoesMatchOng" />
         <activity android:name=".Home1Ongs" />

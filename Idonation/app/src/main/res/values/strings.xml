@@ -48,4 +48,6 @@
     <string name="name_numeros_match">{number}</string>
     <string name="name_btn_abrir_chat">Abrir Chat</string>
     <string name="name_doador_mensagens">{Nome Doador}</string>
+
+
 </resources>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    tools:context=".match">
 
     <EditText
         android:layout_width="412dp"
         android:layout_height="70dp"
         android:background="@drawable/barra_superior_menu"
         android:id="@+id/barra_menu_superior"
-        />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="110dp"
@@ -22,19 +22,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_numeros_match"
+        app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textNumberMatch"
+        android:textSize="17sp"
+        android:textColor="#E91E63"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="300dp"
+        tools:ignore="DuplicateIds" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doações de interesse : "
-        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        android:text="Match's"
+        app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/textDoacoesInteresse"
-        android:textSize="20sp"
+        android:id="@+id/textMatch"
+        android:textSize="18sp"
         android:textColor="#E91E63"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="130dp"
         tools:ignore="DuplicateIds" />
 
     <ImageView
@@ -46,75 +59,60 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="130dp"
+        android:layout_marginRight="150dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Doador:  "
-        app:layout_constraintTop_toBottomOf="@id/textDoacoesInteresse"
+        app:layout_constraintTop_toBottomOf="@id/textNumberMatch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/textDoador1"
+        android:id="@+id/textDoadorMatch1"
         android:textSize="17sp"
         android:textColor="#FFFFFF"
         android:layout_marginTop="40dp"
         android:layout_marginRight="300dp"
         tools:ignore="DuplicateIds" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/name_doador"
-                app:layout_constraintTop_toBottomOf="@id/textDoacoesInteresse"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:id="@+id/textDoador2"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="130dp"
-                tools:ignore="DuplicateIds" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doação:  "
-        app:layout_constraintTop_toBottomOf="@id/textDoacoesInteresse"
+        android:text="Doação: "
+        app:layout_constraintTop_toBottomOf="@id/textDoadorMatch1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/textDoador3"
-        android:textSize="17sp"
+        android:id="@+id/textDoadorMatch2"
+        android:textSize="18sp"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="300dp"
         tools:ignore="DuplicateIds" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/name_doacao"
-                app:layout_constraintTop_toBottomOf="@id/textDoador2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:id="@+id/textDoador4"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="28dp"
-                android:layout_marginRight="130dp"
-                tools:ignore="DuplicateIds" />
-
     <Button
-        android:layout_width="165dp"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:textSize="14sp"
-        android:layout_marginLeft="240dp"
-        android:text="@string/name_btn_remover_curtida"
+        android:layout_marginLeft="225dp"
+        android:text="@string/name_btn_abrir_chat"
         android:textColor="@color/colorWhite"
         android:background="@drawable/btn_border_radius"
-        app:layout_constraintTop_toTopOf="@id/textDoacoesInteresse"
+        app:layout_constraintTop_toTopOf="@id/cadDoacoesInteresse1"
         app:layout_constraintLeft_toLeftOf="@id/cadDoacoesInteresse1"
+        />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="176dp"
+        android:id="@+id/cadFotoMatch"
+        android:src="@drawable/foto_match"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="260dp"
         />
 
 
@@ -125,6 +123,6 @@
         android:id="@+id/barra_inferior_menu"
         app:layout_constraintTop_toTopOf="@id/cadDoacoesInteresse1"
         android:layout_marginTop="531dp"
-        />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
