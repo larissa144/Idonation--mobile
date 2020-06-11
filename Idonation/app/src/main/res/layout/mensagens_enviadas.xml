@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fundo_1">
+
+    <EditText
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:background="@drawable/barra_superior_menu"
+        android:id="@+id/barra_menu_superior"
+        />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/barra_pesquisa"
+        android:id="@+id/barra_pesquisa"
+        />
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="650dp"
+        android:id="@+id/cadMensagensEnviadas"
+        android:src="@drawable/cad_mensagens_enviadas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensagens Enviadas "
+        app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textMenagensEnviadas"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="150dp"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        app:layout_constraintTop_toBottomOf="@id/cadMensagensEnviadas"
+        android:id="@+id/cadMensagens"
+        android:src="@drawable/cad_mensagens"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="350dp"
+        app:layout_constraintTop_toBottomOf="@id/cadMensagensEnviadas"
+        android:id="@+id/cadFotoMensagens"
+        android:src="@drawable/foto_mensagens_enviadas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="240dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_doador_mensagens"
+        app:layout_constraintTop_toBottomOf="@id/textMenagensEnviadas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textDoador2"
+        android:textSize="18sp"
+        android:textColor="#E91E63"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="10dp"
+        tools:ignore="DuplicateIds" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="320dp"
+        android:text="X"
+        app:layout_constraintTop_toTopOf="@id/cadMensagensEnviadas"
+        app:layout_constraintLeft_toLeftOf="@id/cadMensagensEnviadas"
+        />
+
+    <EditText
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:background="@drawable/barra_superior_menu"
+        android:id="@+id/barra_inferior_menu"
+        app:layout_constraintTop_toTopOf="@id/cadMensagensEnviadas"
+        android:layout_marginTop="591dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
