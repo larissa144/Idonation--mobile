@@ -14,7 +14,7 @@ class cad_doadro_pass1 : AppCompatActivity() {
 
     fun irTelaAcessarConta(v: View) {
 
-        val irTelaAcessarConta = Intent(this, login_cpf::class.java)
+        val irTelaAcessarConta = Intent(this, LoginCpfActivity::class.java)
 
         startActivity(irTelaAcessarConta)
     }

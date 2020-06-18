@@ -28,7 +28,7 @@
         android:textColor="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Olá <name> !"
+        android:text="Olá name !"
 
         />
     <TextView

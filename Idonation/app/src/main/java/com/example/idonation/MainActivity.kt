@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     fun irTelaDoador(v: View) {
 
-        val telaDoador = Intent(this, login_cpf::class.java)
+        val telaDoador = Intent(this, LoginCpfActivity::class.java)
 
         startActivity(telaDoador)
     }

@@ -15,23 +15,19 @@
         <activity android:name=".match" />
         <activity
             android:name=".doacoes_de_interesse"
-            android:label="@string/title_activity_doacoes_de_interesse"
+            android:label="qualquer"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".k"
-            android:label="@string/title_activity_k"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".Outros" />
         <activity android:name=".home1_doador" />
         <activity android:name=".publicacoesMatchOng" />
         <activity android:name=".Home1Ongs" />
         <activity android:name=".Configuracoes" />
         <activity android:name=".TipoDoacao" />
-        <activity android:name=".Tela_teste" />
         <activity android:name=".CadOngPartUm" />
         <activity android:name=".login_ong" />
         <activity android:name=".login_cnpj" />
-        <activity android:name=".login_cpf" />
+        <activity android:name=".LoginCpfActivity" />
         <activity android:name=".cadastroDoadorPJ" />
         <activity android:name=".cadastroDoador" />
         <activity android:name=".cad_doadro_pass1" />

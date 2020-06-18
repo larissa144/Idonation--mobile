@@ -4,9 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login_cpf.*
 
-class login_cpf : AppCompatActivity() {
+class LoginCpfActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,11 +26,13 @@ class login_cpf : AppCompatActivity() {
         val cpf = inputLogin.text.toString()
         val senha = inputLogin2.text.toString()
 
-        val login = Login_cpf_data(cpf, senha)
+        val login = UsuarioLogin(cpf, senha)
 
-        val res = PostLoginTask()
+        val task = PostLoginTask()
 
-        res.execute(login.toString())
+        val resposta = task.execute(login).get()
+
+        Toast.makeText(this, resposta?.nome, Toast.LENGTH_SHORT).show()
 
 
     }

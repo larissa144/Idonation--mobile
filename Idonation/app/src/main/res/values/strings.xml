@@ -43,8 +43,6 @@
     <string name="name_tipoCategoria">{Categoria}</string>
     <string name="name_tipoDoacao">{Doacao}</string>
     <string name="name_btn_remover_curtida">Remover Curtida</string>
-    <string name="name_doador">{Doador}</string>
-    <string name="name_doacao">{Doacao}</string>
     <string name="name_numeros_match">{number}</string>
     <string name="name_btn_abrir_chat">Abrir Chat</string>
     <string name="name_doador_mensagens">{Nome Doador}</string>
