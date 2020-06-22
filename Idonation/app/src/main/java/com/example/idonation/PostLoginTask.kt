@@ -1,10 +1,7 @@
 package com.example.idonation
 
 import android.os.AsyncTask
-import feign.Feign
 import feign.FeignException
-import feign.gson.GsonDecoder
-import feign.gson.GsonEncoder
 
 class PostLoginTask: AsyncTask<UsuarioLogin, Void, UsuarioAutenticado>() {
 

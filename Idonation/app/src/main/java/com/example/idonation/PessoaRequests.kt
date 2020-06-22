@@ -7,5 +7,6 @@ interface PessoaRequests {
 
     @RequestLine("POST /pessoa/login")
     @Headers("Content-Type: application/json")
-    fun postLogin(loginPf: UsuarioLogin) : UsuarioAutenticado
+    fun postLogin(loginPF: UsuarioLogin) : UsuarioAutenticado
+
 }

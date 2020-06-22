@@ -57,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="@string/name_cadastro"
+        android:hint="nomePF"
         android:textSize="20sp"
         android:alpha="0.4"
         app:layout_constraintTop_toTopOf="@id/criarContaPF"
@@ -70,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/name_cpf"
+        android:hint="cpfPF"
         android:textSize="20sp"
         android:alpha="0.4"
         app:layout_constraintTop_toTopOf="@id/nomePF"
@@ -83,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/name_email"
+        android:hint="emailPF"
         android:textSize="20sp"
         android:alpha="0.4"
         app:layout_constraintTop_toTopOf="@id/cpfPF"
@@ -96,6 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/name_senha"
+        android:hint="senhaPF"
         android:textSize="20sp"
         android:alpha="0.4"
         app:layout_constraintTop_toTopOf="@id/emailPF"
@@ -108,6 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/name_confirmarSenha"
+        android:hint="confirmarSenhaPF"
         android:textSize="20sp"
         android:alpha="0.4"
         app:layout_constraintTop_toTopOf="@id/senhaPF"
@@ -115,6 +120,7 @@
         app:layout_constraintLeft_toRightOf="@id/criarContaPF"
         />
     <Button
+        android:id="@+id/enviarCadastroPF"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
@@ -125,6 +131,7 @@
         app:layout_constraintTop_toTopOf="@id/confirmarSenhaPF"
         app:layout_constraintRight_toLeftOf="@id/confirmarSenhaPF"
         app:layout_constraintLeft_toRightOf="@id/confirmarSenhaPF"
+
         />
 
 
