@@ -11,13 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mensagens_enviadas"></activity>
+        <activity android:name=".PublicarDoacao"></activity>
+        <activity android:name=".FazerDoacao" />
+        <activity android:name=".mensagens_enviadas" />
         <activity android:name=".match" />
         <activity
             android:name=".doacoes_de_interesse"
             android:label="qualquer"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity android:name=".Outros" />
         <activity android:name=".home1_doador" />
         <activity android:name=".publicacoesMatchOng" />
