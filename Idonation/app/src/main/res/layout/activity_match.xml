@@ -7,7 +7,7 @@
     tools:context=".match">
 
     <EditText
-        android:layout_width="412dp"
+        android:layout_width="700dp"
         android:layout_height="70dp"
         android:background="@drawable/barra_superior_menu"
         android:id="@+id/barra_menu_superior"
@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name_numeros_match"
+        android:text="Número de match's: 1"
         app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,26 +33,26 @@
         android:textSize="17sp"
         android:textColor="#E91E63"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="300dp"
+        android:layout_marginRight="200dp"
         tools:ignore="DuplicateIds" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Match's"
-        app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/textMatch"
-        android:textSize="18sp"
-        android:textColor="#E91E63"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="130dp"
-        tools:ignore="DuplicateIds" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Match's"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:id="@+id/textMatch"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginRight="130dp"-->
+<!--        tools:ignore="DuplicateIds" />-->
 
     <ImageView
         android:layout_width="410dp"
-        android:layout_height="176dp"
+        android:layout_height="200dp"
         android:id="@+id/cadDoacoesInteresse1"
         android:src="@drawable/cad_doacoes_interesse"
         app:layout_constraintTop_toTopOf="parent"
@@ -65,35 +65,35 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doador:  "
+        android:text="Doador: Larissa  "
         app:layout_constraintTop_toBottomOf="@id/textNumberMatch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/textDoadorMatch1"
         android:textSize="17sp"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="300dp"
+        android:layout_marginRight="250dp"
         tools:ignore="DuplicateIds" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doação: "
+        android:text="Doação: alimentos não perecíveis "
         app:layout_constraintTop_toBottomOf="@id/textDoadorMatch1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/textDoadorMatch2"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textColor="#000000"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="300dp"
+        android:layout_marginRight="120dp"
         tools:ignore="DuplicateIds" />
 
     <Button
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="110dp"
         android:textSize="14sp"
         android:layout_marginLeft="225dp"
         android:text="@string/name_btn_abrir_chat"
@@ -103,21 +103,21 @@
         app:layout_constraintLeft_toLeftOf="@id/cadDoacoesInteresse1"
         />
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="176dp"
-        android:id="@+id/cadFotoMatch"
-        android:src="@drawable/foto_match"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="260dp"
-        />
+<!--    <ImageView-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="176dp"-->
+<!--        android:id="@+id/cadFotoMatch"-->
+<!--        android:src="@drawable/foto_match"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="130dp"-->
+<!--        android:layout_marginLeft="260dp"-->
+<!--        />-->
 
 
     <EditText
-        android:layout_width="412dp"
+        android:layout_width="700dp"
         android:layout_height="70dp"
         android:background="@drawable/barra_superior_menu"
         android:id="@+id/barra_inferior_menu"

@@ -1,7 +1,9 @@
 package com.example.idonation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class home1_doador : AppCompatActivity() {
 
@@ -9,4 +11,28 @@ class home1_doador : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home1_doador)
     }
+
+
+    fun irTelaConfiguracoes(v: View){
+
+        val irTelaConfiguracoes = Intent(this, Configuracoes::class.java)
+
+        startActivity(irTelaConfiguracoes)
+    }
+
+    fun irTelaPublicarDoacao(v: View){
+
+        val  irTelaPublicarDoacao = Intent(this, PublicarDoacao::class.java)
+
+        startActivity(irTelaPublicarDoacao)
+    }
+
+    fun irTelaPublicacao(v: View){
+
+        val  irTelaPublicacao = Intent(this, Outros::class.java)
+
+        startActivity(irTelaPublicacao)
+    }
+
+
 }

@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".publicacoesMatchOng"
-    android:background="#E1EC5BAB">
+    android:background="#46EC5BAB">
 
     <EditText
         android:layout_width="412dp"
         android:layout_height="70dp"
-        android:background="@drawable/fundo_config"
+        android:background="@drawable/barra_superior_menu"
         android:id="@+id/txtMenu"
         />
 
@@ -27,34 +27,58 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         app:layout_constraintTop_toBottomOf="@id/imgMenu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/fundo_config2"
+        android:layout_marginTop="100dp"
         android:id="@+id/divConfig"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalhes da publicação"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="23sp"
+        android:textColor="#E91E63"
+        android:layout_marginTop="140dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="{FOTOS DOADORES}"
+        android:text="Tipo de doador: Pessoa Física"
         app:layout_constraintTop_toBottomOf="@id/imgMenu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="20sp"
         android:textColor="#C1753F68"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="210dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do doador: Larissa"
+        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:textColor="#C1753F68"
+        android:layout_marginTop="250dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/imgMenu"
-        android:layout_marginTop="470dp"
-        android:textSize="27sp"
+        android:layout_marginTop="300dp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="{DESCRIÇÃO DA DOAÇÃO}"
+        android:text="Doação: Alimentos não perecíveis"
         android:id="@+id/textDescription"
         />
 
@@ -77,7 +101,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnOng"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="@string/name_btn_proximo"
         android:textSize="15sp"
         android:id="@+id/btnOngProximo"

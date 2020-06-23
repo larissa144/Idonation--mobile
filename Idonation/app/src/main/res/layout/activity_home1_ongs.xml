@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         />
 
     <TextView
@@ -28,7 +28,7 @@
         android:textColor="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Olá name !"
+        android:text="Olá Michelle !"
 
         />
     <TextView
@@ -57,6 +57,7 @@
         android:textSize="15sp"
         android:id="@+id/btnMatch"
         android:background="@drawable/botao_config"
+        android:onClick="irTelaMatch"
         />
 
     <TextView
@@ -67,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="410dp"
         android:id="@+id/linha"
 
         />
@@ -78,11 +79,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linha"
-        android:layout_marginTop="70dp"
-        android:text="@string/name_btn_outros"
+        android:layout_marginTop="50dp"
+        android:text="Publicações"
         android:textSize="15sp"
-        android:id="@+id/btnOng"
+        android:id="@+id/btnOutros"
         android:background="@drawable/botao_config"
+        android:onClick="irTelaOutros"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOutros"
+        android:background="@drawable/linha"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="550dp"
+        android:id="@+id/linha2"
+
+        />
+
+    <Button
+        android:layout_width="276dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linha2"
+        android:layout_marginTop="50dp"
+        android:text="Configurações"
+        android:textSize="15sp"
+        android:id="@+id/btnFazerPublicacao"
+        android:background="@drawable/botao_config"
+        android:onClick="irTelaConfiguracoes"
+
+
         />
 
 

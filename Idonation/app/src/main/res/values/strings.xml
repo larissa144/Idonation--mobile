@@ -36,7 +36,7 @@
     <string name="name_btn_proximo">Próximo</string>
     <string name="name_btn_like">Like</string>
     <string name="name_publicacoes">Publicações: </string>
-    <string name="name_doacao">Doação</string>
+    <string name="name_doacao">Doação:</string>
     <string name="name_like">Like</string>
     <string name="name_bnt_excluir">Excluir </string>
     <string name="nmr_like">{Like}</string>
@@ -47,7 +47,6 @@
     <string name="name_btn_abrir_chat">Abrir Chat</string>
     <string name="name_doador_mensagens">{Nome Doador}</string>
     <string name="name_fazer_doacao"> Fazer doação</string>
-    <string name="name_instituicao"> Nome instituição </string>
     <string-array name="name_mockOngs">
         <item>Selecione uma opção...</item>
         <item>Caminho do sol</item>

@@ -87,7 +87,7 @@
         android:layout_marginBottom="31dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="12dp"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:hint="Senha"
         android:textSize="18sp" />
 
@@ -117,6 +117,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Entrar"/>
+        android:text="Entrar"
+        android:onClick="fazerLogin"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

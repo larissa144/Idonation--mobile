@@ -144,6 +144,7 @@
         app:layout_constraintTop_toTopOf="@id/categoriaOng"
         app:layout_constraintRight_toLeftOf="@id/criarContaOng"
         app:layout_constraintLeft_toRightOf="@id/criarContaOng"
+        android:onClick="irTelaLoginOng"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

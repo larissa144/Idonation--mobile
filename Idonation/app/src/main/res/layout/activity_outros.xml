@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Outros" android:background="#E1EC5BAB">
+    tools:context=".Outros">
 
 
-<EditText
-        android:layout_width="412dp"
+    <EditText
+        android:layout_width="700dp"
         android:layout_height="70dp"
-        android:background="@drawable/fundo_config"
-        android:id="@+id/txtMenu"
-        />
+        android:background="@drawable/barra_superior_menu"
+        android:id="@+id/barra_menu_superior"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="110dp"
@@ -21,285 +21,111 @@
         android:src="@drawable/idonation_white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de Like's: 1"
+        app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textNumberMatch"
+        android:textSize="17sp"
+        android:textColor="#E91E63"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="200dp"
+        tools:ignore="DuplicateIds" />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Match's"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/barra_menu_superior"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:id="@+id/textMatch"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textColor="#E91E63"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:layout_marginRight="130dp"-->
+    <!--        tools:ignore="DuplicateIds" />-->
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:id="@+id/cadDoacoesInteresse1"
+        android:src="@drawable/cad_doacoes_interesse"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="150dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name_publicacoes"
-        app:layout_constraintTop_toBottomOf="@id/imgMenu"
+        android:text="Destinado: Todos  "
+        app:layout_constraintTop_toBottomOf="@id/textNumberMatch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/colorWhite"
+        android:id="@+id/textDoadorMatch1"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="250dp"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doação: alimentos não perecíveis "
+        app:layout_constraintTop_toBottomOf="@id/textDoadorMatch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textDoadorMatch2"
+        android:textSize="17sp"
+        android:textColor="#000000"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"
-        android:id="@+id/txtPubli"
+        android:layout_marginRight="120dp"
+        tools:ignore="DuplicateIds" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="225dp"
+        android:text="Ver likes"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_border_radius"
+        app:layout_constraintTop_toTopOf="@id/cadDoacoesInteresse1"
+        app:layout_constraintLeft_toLeftOf="@id/cadDoacoesInteresse1"
         />
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="176dp"-->
+    <!--        android:id="@+id/cadFotoMatch"-->
+    <!--        android:src="@drawable/foto_match"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginTop="130dp"-->
+    <!--        android:layout_marginLeft="260dp"-->
+    <!--        />-->
+
+
     <EditText
-        android:layout_marginTop="571dp"
-        android:layout_width="412dp"
+        android:layout_width="700dp"
         android:layout_height="70dp"
-        app:layout_constraintTop_toBottomOf="@id/imgMenu"
-        android:background="@drawable/fundo_config"
-        android:id="@+id/txtMenu1"
-        />
+        android:background="@drawable/barra_superior_menu"
+        android:id="@+id/barra_inferior_menu"
+        app:layout_constraintTop_toTopOf="@id/cadDoacoesInteresse1"
+        android:layout_marginTop="531dp"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:layout_width="400dp"
-        android:layout_height="150dp"
-        android:background="@color/colorWhite"
-        app:layout_constraintTop_toBottomOf="@id/txtPubli"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="23dp"
-        android:textSize="20sp"
-        android:id="@+id/imgPubli1"></TextView>
-
-                        <TextView
-                            android:layout_height="24dp"
-                            app:layout_constraintTop_toBottomOf="@id/txtPubli"
-                            app:layout_constraintStart_toStartOf="@id/imgPubli1"
-                            android:layout_marginLeft="9dp"
-                            android:layout_marginTop="34dp"
-                            android:textSize="20sp"
-                            android:text="@string/name_categoria"
-                            android:textColor="@color/colorAccent"
-                            android:id="@+id/imgPubli10"/>
-
-                                <TextView
-                                    android:layout_height="24dp"
-                                    app:layout_constraintTop_toBottomOf="@id/txtPubli"
-                                    app:layout_constraintStart_toStartOf="@id/imgPubli1"
-                                    android:layout_marginTop="34dp"
-                                    android:textSize="20sp"
-                                    android:text="@string/name_tipoCategoria"
-                                    android:textColor="@color/colorAccent"
-                                    android:layout_marginLeft="100dp"
-                                    />
-
-                        <TextView
-                            android:layout_height="35dp"
-                            app:layout_constraintTop_toBottomOf="@id/imgPubli10"
-                            app:layout_constraintStart_toStartOf="@id/imgPubli10"
-                            android:layout_marginTop="20dp"
-                            android:textSize="20sp"
-                            android:text="@string/name_doacao"
-                            android:textColor="@color/colorAccent"
-                            android:id="@+id/imgPubli11"></TextView>
-                                    <TextView
-                                        android:layout_height="24dp"
-                                        app:layout_constraintTop_toBottomOf="@id/imgPubli10"
-                                        app:layout_constraintStart_toStartOf="@id/imgPubli11"
-                                        android:layout_marginTop="19dp"
-                                        android:textSize="20sp"
-                                        android:text="@string/name_tipoDoacao"
-                                        android:textColor="@color/colorAccent"
-                                        android:layout_marginLeft="75dp"
-                                        />
-
-                    <TextView
-                        android:layout_height="30dp"
-                        app:layout_constraintTop_toBottomOf="@id/imgPubli11"
-                        app:layout_constraintStart_toStartOf="@id/imgPubli11"
-                        android:layout_marginTop="15dp"
-                        android:textSize="20sp"
-                        android:text="@string/name_like"
-                        android:textColor="@color/colorAccent"
-                        android:id="@+id/imgPubli12"></TextView>
-                                    <TextView
-                                        android:layout_height="24dp"
-                                        app:layout_constraintTop_toBottomOf="@id/imgPubli11"
-                                        app:layout_constraintStart_toStartOf="@id/imgPubli12"
-                                        android:layout_marginTop="16dp"
-                                        android:textSize="19sp"
-                                        android:text="@string/nmr_like"
-                                        android:textColor="@color/colorAccent"
-                                        android:layout_marginLeft="45dp"
-                                        />
-
-                                    <Button
-                                        android:layout_width="150dp"
-                                        android:layout_height="30dp"
-                                        android:layout_marginTop="15dp"
-                                        android:textSize="15sp"
-                                        android:text="@string/name_bnt_excluir"
-                                        android:background="@drawable/btn_border_radius"
-                                        android:textColor="@color/colorWhite"
-                                        app:layout_constraintTop_toBottomOf="@id/imgPubli11"
-                                        app:layout_constraintLeft_toRightOf="@id/imgPubli12"
-                                        android:layout_marginLeft="190dp"
-                                        />
-
-    <TextView
-        android:layout_width="400dp"
-        android:layout_height="150dp"
-        android:background="@color/colorWhite"
-        app:layout_constraintTop_toBottomOf="@id/imgPubli1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="19dp"
-        android:textSize="20sp"
-        android:id="@+id/imgPubli2"
-        android:textColor="@color/colorWhite"></TextView>
-                    <TextView
-                        android:layout_height="24dp"
-                        app:layout_constraintTop_toBottomOf="@id/imgPubli1"
-                        app:layout_constraintStart_toStartOf="@id/imgPubli1"
-                        android:layout_marginLeft="9dp"
-                        android:layout_marginTop="34dp"
-                        android:textSize="20sp"
-                        android:text="@string/name_categoria"
-                        android:textColor="@color/colorAccent"
-                        android:id="@+id/imgPubli3"></TextView>
-
-                            <TextView
-                                android:layout_height="24dp"
-                                app:layout_constraintTop_toBottomOf="@id/imgPubli1"
-                                app:layout_constraintStart_toStartOf="@id/imgPubli1"
-                                android:layout_marginTop="34dp"
-                                android:textSize="20sp"
-                                android:text="@string/name_tipoCategoria"
-                                android:textColor="@color/colorAccent"
-                                android:layout_marginLeft="100dp"
-                            />
-                    <TextView
-                        android:layout_height="35dp"
-                        app:layout_constraintTop_toBottomOf="@id/imgPubli3"
-                        app:layout_constraintStart_toStartOf="@id/imgPubli3"
-                        android:layout_marginTop="20dp"
-                        android:textSize="20sp"
-                        android:text="@string/name_doacao"
-                        android:textColor="@color/colorAccent"
-                        android:id="@+id/imgPubli4"></TextView>
-                                <TextView
-                                    android:layout_height="24dp"
-                                    app:layout_constraintTop_toBottomOf="@id/imgPubli3"
-                                    app:layout_constraintStart_toStartOf="@id/imgPubli4"
-                                    android:layout_marginTop="19dp"
-                                    android:textSize="20sp"
-                                    android:text="@string/name_tipoDoacao"
-                                    android:textColor="@color/colorAccent"
-                                    android:layout_marginLeft="75dp"
-                                    />
-
-                    <TextView
-                        android:layout_height="30dp"
-                        app:layout_constraintTop_toBottomOf="@id/imgPubli4"
-                        app:layout_constraintStart_toStartOf="@id/imgPubli4"
-                        android:layout_marginTop="15dp"
-                        android:textSize="20sp"
-                        android:text="@string/name_like"
-                        android:textColor="@color/colorAccent"
-                        android:id="@+id/imgPubli5"></TextView>
-                                    <TextView
-                                        android:layout_height="24dp"
-                                        app:layout_constraintTop_toBottomOf="@id/imgPubli4"
-                                        app:layout_constraintStart_toStartOf="@id/imgPubli5"
-                                        android:layout_marginTop="16dp"
-                                        android:textSize="19sp"
-                                        android:text="@string/nmr_like"
-                                        android:textColor="@color/colorAccent"
-                                        android:layout_marginLeft="45dp"
-                                        />
-
-                    <Button
-                        android:layout_width="150dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="15dp"
-                        android:textSize="15sp"
-                        android:text="@string/name_bnt_excluir"
-                        android:background="@drawable/btn_border_radius"
-                        android:textColor="@color/colorWhite"
-                        app:layout_constraintTop_toBottomOf="@id/imgPubli4"
-                        app:layout_constraintLeft_toRightOf="@id/imgPubli5"
-                        android:layout_marginLeft="190dp"
-                        />
-
-
-    <TextView
-        android:layout_width="400dp"
-        android:layout_height="150dp"
-        android:background="@color/colorWhite"
-        app:layout_constraintTop_toBottomOf="@id/imgPubli2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="19dp"
-        android:textSize="20sp"
-        android:id="@+id/imgPubli20"
-        />
-                    <TextView
-                        android:layout_height="24dp"
-                        app:layout_constraintTop_toBottomOf="@id/imgPubli2"
-                        app:layout_constraintStart_toStartOf="@id/imgPubli2"
-                        android:layout_marginLeft="9dp"
-                        android:layout_marginTop="34dp"
-                        android:textSize="20sp"
-                        android:text="@string/name_categoria"
-                        android:textColor="@color/colorAccent"
-                        android:id="@+id/imgPubli21"></TextView>
-
-                                    <TextView
-                                        android:layout_height="24dp"
-                                        app:layout_constraintTop_toBottomOf="@id/imgPubli2"
-                                        app:layout_constraintStart_toStartOf="@id/imgPubli2"
-                                        android:layout_marginTop="34dp"
-                                        android:textSize="20sp"
-                                        android:text="@string/name_tipoCategoria"
-                                        android:textColor="@color/colorAccent"
-                                        android:layout_marginLeft="100dp"
-                                        />
-
-                        <TextView
-                            android:layout_height="35dp"
-                            app:layout_constraintTop_toBottomOf="@id/imgPubli21"
-                            app:layout_constraintStart_toStartOf="@id/imgPubli21"
-                            android:layout_marginTop="20dp"
-                            android:textSize="20sp"
-                            android:text="@string/name_doacao"
-                            android:textColor="@color/colorAccent"
-                            android:id="@+id/imgPubli22"></TextView>
-                                <TextView
-                                    android:layout_height="24dp"
-                                    app:layout_constraintTop_toBottomOf="@id/imgPubli21"
-                                    app:layout_constraintStart_toStartOf="@id/imgPubli22"
-                                    android:layout_marginTop="19dp"
-                                    android:textSize="20sp"
-                                    android:text="@string/name_tipoDoacao"
-                                    android:textColor="@color/colorAccent"
-                                    android:layout_marginLeft="75dp"
-                                    />
-                <TextView
-                    android:layout_height="30dp"
-                    app:layout_constraintTop_toBottomOf="@id/imgPubli22"
-                    app:layout_constraintStart_toStartOf="@id/imgPubli22"
-                    android:layout_marginTop="15dp"
-                    android:textSize="20sp"
-                    android:text="@string/name_like"
-                    android:textColor="@color/colorAccent"
-                    android:id="@+id/imgPubli25"></TextView>
-                        <TextView
-                            android:layout_height="24dp"
-                            app:layout_constraintTop_toBottomOf="@id/imgPubli22"
-                            app:layout_constraintStart_toStartOf="@id/imgPubli25"
-                            android:layout_marginTop="16dp"
-                            android:textSize="19sp"
-                            android:text="@string/nmr_like"
-                            android:textColor="@color/colorAccent"
-                            android:layout_marginLeft="45dp"
-                            />
-
-                                    <Button
-                                        android:layout_width="150dp"
-                                        android:layout_height="30dp"
-                                        android:layout_marginTop="15dp"
-                                        android:textSize="15sp"
-                                        android:text="@string/name_bnt_excluir"
-                                        android:background="@drawable/btn_border_radius"
-                                        android:textColor="@color/colorWhite"
-                                        app:layout_constraintTop_toBottomOf="@id/imgPubli22"
-                                        app:layout_constraintLeft_toRightOf="@id/imgPubli25"
-                                        android:layout_marginLeft="190dp"
-                                        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

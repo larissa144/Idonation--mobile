@@ -10,7 +10,7 @@
 
     <ImageView
         android:layout_width="276dp"
-        android:layout_height="176dp"
+        android:layout_height="186dp"
         android:id="@+id/rectangle_8"
         android:src="@drawable/idonation_white"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rectangle_8"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:onClick="irTelaDoador"
         android:text="@string/name_doador"
         android:textSize="15sp"
@@ -36,13 +36,13 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="2sp"
         app:layout_constraintTop_toBottomOf="@id/btnDoador"
         android:background="@drawable/linha"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="440dp"
 
         />
 

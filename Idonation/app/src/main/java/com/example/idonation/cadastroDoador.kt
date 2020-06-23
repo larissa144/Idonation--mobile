@@ -1,6 +1,8 @@
 package com.example.idonation
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
@@ -14,33 +16,42 @@ class cadastroDoador : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_doador)
 
-        val enviarCadastro = findViewById<Button>(R.id.enviarCadastroPF)
+//        val enviarCadastro = findViewById<Button>(R.id.enviarCadastroPF)
+//
+//        val nomePF = findViewById<EditText>(R.id.nomePF)
+//        val cpfPF = findViewById<EditText>(R.id.cpfPF)
+//        val emailPF = findViewById<EditText>(R.id.emailPF)
+//        val senhaPF = findViewById<EditText>(R.id.senhaPF)
+//        val confirmarSenhaPF = findViewById<EditText>(R.id.confirmarSenhaPF)
+//
+//        enviarCadastro.setOnClickListener {
+//            val cadastroPf = UsuarioCadastro()
+//
+//            cadastroPf.nomePF = nomePF.text.toString()
+//            cadastroPf.cpfPF = cpfPF.text.toString()
+//            cadastroPf.emailPF = emailPF.text.toString()
+//            cadastroPf.senhaPF = senhaPF.text.toString()
+//            cadastroPf.confirmarSenhaPF = confirmarSenhaPF.text.toString()
+//
+//            val gson = Gson()
+//            val cadastroPfJson = gson.toJson(cadastroPf)
+//
+//            doAsync {
+//                val http = HttpHelper()
+//
+//                http.post(cadastroPfJson)
+//            }
+//
+//        }
 
-        val nomePF = findViewById<EditText>(R.id.nomePF)
-        val cpfPF = findViewById<EditText>(R.id.cpfPF)
-        val emailPF = findViewById<EditText>(R.id.emailPF)
-        val senhaPF = findViewById<EditText>(R.id.senhaPF)
-        val confirmarSenhaPF = findViewById<EditText>(R.id.confirmarSenhaPF)
+    }
 
-        enviarCadastro.setOnClickListener {
-            val cadastroPf = UsuarioCadastro()
+    fun irTelaLoginCPF(v: View) {
 
-            cadastroPf.nomePF = nomePF.text.toString()
-            cadastroPf.cpfPF = cpfPF.text.toString()
-            cadastroPf.emailPF = emailPF.text.toString()
-            cadastroPf.senhaPF = senhaPF.text.toString()
-            cadastroPf.confirmarSenhaPF = confirmarSenhaPF.text.toString()
+        val irTelaLoginCPF = Intent(this, LoginCpfActivity::class.java)
 
-            val gson = Gson()
-            val cadastroPfJson = gson.toJson(cadastroPf)
+        startActivity(irTelaLoginCPF)
 
-            doAsync {
-                val http = HttpHelper()
-
-                http.post(cadastroPfJson)
-            }
-
-        }
 
     }
 }

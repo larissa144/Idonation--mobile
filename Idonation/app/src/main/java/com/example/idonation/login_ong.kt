@@ -18,4 +18,12 @@ class login_ong : AppCompatActivity() {
 
         startActivity(irTelaCriarContaOng)
     }
+
+    fun fazerLogin(v: View){
+
+        val fazerLogin = Intent(this, Home1Ongs::class.java)
+
+        startActivity(fazerLogin)
+
+    }
 }

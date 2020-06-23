@@ -32,8 +32,11 @@ class LoginCpfActivity : AppCompatActivity() {
 
         val resposta = task.execute(login).get()
 
-        Toast.makeText(this, resposta?.nome, Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this, resposta?.nome, Toast.LENGTH_SHORT).show()
 
+        val fazerLogin = Intent(this, home1_doador::class.java)
+
+        startActivity(fazerLogin)
 
     }
 }
