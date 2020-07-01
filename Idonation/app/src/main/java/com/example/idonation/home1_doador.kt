@@ -34,5 +34,11 @@ class home1_doador : AppCompatActivity() {
         startActivity(irTelaPublicacao)
     }
 
+    fun irTelaFazerDoacao(v: View){
+
+        val irTelaFazerDoacao = Intent(this, FazerDoacao::class.java )
+        startActivity(irTelaFazerDoacao)
+    }
+
 
 }

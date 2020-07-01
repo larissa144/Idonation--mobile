@@ -19,14 +19,6 @@ class cadastroDoadorPJ : AppCompatActivity() {
         setContentView(R.layout.activity_cadastro_doador_p_j)
     }
 
-    fun irTelaLoginCNPJ(v: View) {
-
-        val irTelaLoginCNPJ = Intent(this, login_cnpj::class.java)
-
-        startActivity(irTelaLoginCNPJ)
-
-
-    }
 
     fun cadastrarPJ(v: View){
 
@@ -41,7 +33,6 @@ class cadastroDoadorPJ : AppCompatActivity() {
 
         val resposta = task.execute(cadastroDois).get()
 
-//        Toast.makeText(this, resposta?.nome, Toast.LENGTH_SHORT).show()
 
         val cadastrar = Intent(this, login_cnpj::class.java)
 

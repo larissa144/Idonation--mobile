@@ -25,4 +25,8 @@ interface PessoaRequests {
     @Headers ("Content-Type: application/json")
     fun postCadPJ(cadPj: UsuarioCadastroPJ) : UsuarioCadastroPJ
 
+    @RequestLine("POST /Organizacao/cadastrar")
+    @Headers("Content-Type: application/json")
+    fun postCadOng(cadOng: UsuarioCadastroOng) : UsuarioCadastroOng
+
 }
