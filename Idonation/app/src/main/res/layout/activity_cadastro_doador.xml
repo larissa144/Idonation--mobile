@@ -127,7 +127,7 @@
         app:layout_constraintTop_toTopOf="@id/confirmarSenhaPF"
         app:layout_constraintRight_toLeftOf="@id/confirmarSenhaPF"
         app:layout_constraintLeft_toRightOf="@id/confirmarSenhaPF"
-        android:onClick="irTelaLoginCPF"
+        android:onClick="cadastrarPf"
 
         />
 
