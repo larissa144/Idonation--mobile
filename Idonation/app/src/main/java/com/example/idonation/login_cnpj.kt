@@ -4,7 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_login_cnpj.*
 import kotlinx.android.synthetic.main.activity_login_cpf.*
+import kotlinx.android.synthetic.main.activity_login_cpf.inputLogin2
+import kotlinx.android.synthetic.main.activity_login_ong.*
 
 class login_cnpj : AppCompatActivity() {
 
@@ -20,11 +23,23 @@ class login_cnpj : AppCompatActivity() {
         startActivity(irTelaCriarConta)
     }
 
-    fun fazerLogin(v: View){
 
-        val fazerLogin = Intent(this, home1_doador::class.java)
+    fun fazerLoginCnpj(v: View){
 
-        startActivity(fazerLogin)
+        val cnpj = inputLoginOng.text.toString()
+        val password = inputLoginOng2.text.toString()
+
+        val loginCnpj = UsuarioLoginCnpj(cnpj, password)
+
+        val task = PostLoginCnpjTask()
+
+        val resposta = task.execute(loginCnpj).get()
+
+//        Toast.makeText(this, resposta?.nome, Toast.LENGTH_SHORT).show()
+
+        val fazerLoginCNPJ = Intent(this, home1_doador::class.java)
+
+        startActivity(fazerLoginCNPJ)
 
     }
 }

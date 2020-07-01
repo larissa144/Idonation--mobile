@@ -9,4 +9,12 @@ interface PessoaRequests {
     @Headers("Content-Type: application/json")
     fun postLogin(loginPF: UsuarioLogin) : UsuarioAutenticado
 
+    @RequestLine("POST /empresa/login")
+    @Headers("Content-Type: application/json")
+    fun postLoginCnpj(loginCnpj: UsuarioLoginCnpj) : UsuarioAutenticadoCnpj
+
+    @RequestLine("POST /Organizacao/login")
+    @Headers("Content-Type: application/json")
+    fun postLoginOng(loginOng: UsuarioLoginCnpj) : UsuarioAutenticadoOng
+
 }
