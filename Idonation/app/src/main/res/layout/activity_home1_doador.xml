@@ -27,7 +27,7 @@
         android:textColor="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Olá Larissa !"
+        android:text="Olá !"
 
         />
     <TextView
