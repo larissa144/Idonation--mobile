@@ -118,7 +118,7 @@
         app:layout_constraintTop_toTopOf="@id/confirmarSenhaPJ"
         app:layout_constraintRight_toLeftOf="@id/confirmarSenhaPJ"
         app:layout_constraintLeft_toRightOf="@id/confirmarSenhaPJ"
-        android:onClick="irTelaLoginCNPJ"
+        android:onClick="cadastrarPJ"
         />
 
 

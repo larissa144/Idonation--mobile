@@ -105,33 +105,17 @@
         app:layout_constraintLeft_toRightOf="@id/criarContaOng"
         />
 
-    <TextView
+    <EditText
         android:id="@+id/categoriaOng"
-        android:layout_width="wrap_content"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="73dp"
-        android:alpha="0.5"
         android:text="@string/name_categoria"
         android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.702"
-        app:layout_constraintLeft_toRightOf="@id/criarContaOng"
-        app:layout_constraintRight_toLeftOf="@id/criarContaOng"
-        app:layout_constraintTop_toTopOf="@id/descriçãoOng" />
-
-    <Spinner
-        android:id="@+id/categoriaItem"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
         android:alpha="0.4"
-        android:entries="@array/name_categoriaitem"
-        app:layout_constraintHorizontal_bias="0.458"
-        app:layout_constraintLeft_toRightOf="@id/criarContaOng"
-        app:layout_constraintRight_toLeftOf="@id/senhaOng"
         app:layout_constraintTop_toTopOf="@id/descriçãoOng"
-        style="@style/Spinner"
-        />
-
+        app:layout_constraintRight_toLeftOf="@id/descriçãoOng"
+        app:layout_constraintLeft_toRightOf="@id/descriçãoOng" />
 
     <Button
         android:layout_width="150dp"
@@ -144,7 +128,7 @@
         app:layout_constraintTop_toTopOf="@id/categoriaOng"
         app:layout_constraintRight_toLeftOf="@id/criarContaOng"
         app:layout_constraintLeft_toRightOf="@id/criarContaOng"
-        android:onClick="irTelaLoginOng"
+        android:onClick="cadastrarOng"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

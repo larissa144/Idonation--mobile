@@ -1,17 +1,6 @@
 package com.example.idonation
 
-class UsuarioCadastroPJ {
-
-    var razaoSocial = ""
-    var cnpj = ""
-    var emailPj = ""
-    var senhaPJ = ""
-    var confirmarSenhaPj = ""
+data class UsuarioCadastroPJ(val email:String, val id:String, val razao_social:String, val pass: PassCnpj)
 
 
-    override fun toString(): String {
-        return "UsuarioCadastroPJ(razaoSocial='$razaoSocial', cnpj='$cnpj', emailPj='$emailPj', senhaPJ='$senhaPJ', confirmarSenhaPj='$confirmarSenhaPj')"
-    }
 
-
-}
