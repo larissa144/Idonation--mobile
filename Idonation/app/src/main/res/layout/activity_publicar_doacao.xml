@@ -34,7 +34,7 @@
 
     <View
         android:layout_width="380dp"
-        android:layout_height="490dp"
+        android:layout_height="450dp"
         android:id="@+id/cardFundo"
         android:background="@drawable/card_login"
         app:layout_constraintTop_toTopOf="parent"
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name_destinado"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintTop_toBottomOf="@id/txtPublicarDoacao"
         app:layout_constraintLeft_toRightOf="@id/txtPublicarDoacao"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,21 +56,19 @@
         android:layout_marginLeft="20dp"
         />
 
-    <Spinner
-        android:id="@+id/mockDestinados"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="255dp"
-        android:alpha="0.4"
-        android:entries="@array/name_mockDestinados"
-        app:layout_constraintHorizontal_bias="0.300"
-        app:layout_constraintLeft_toRightOf="@id/txtDestinado"
+    <EditText
+        android:id="@+id/etDestinado"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:background="@drawable/descricao"
         app:layout_constraintTop_toBottomOf="@id/txtDestinado"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtOqDoar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/Spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         />
+
+
 
     <TextView
         android:id="@+id/txtDoacoes"
@@ -78,28 +76,26 @@
         android:layout_height="wrap_content"
         android:text="@string/name_ItensDoados"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/mockDestinados"
-        app:layout_constraintLeft_toRightOf="@id/mockDestinados"
+        app:layout_constraintTop_toBottomOf="@id/etDestinado"
+        app:layout_constraintLeft_toRightOf="@id/etDestinado"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         />
 
-    <Spinner
-        android:id="@+id/mockDoacoes"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="360dp"
-        android:alpha="0.4"
-        android:entries="@array/name_mockDoacoes"
-        app:layout_constraintHorizontal_bias="0.300"
-        app:layout_constraintLeft_toRightOf="@id/txtDoacoes"
+    <EditText
+        android:id="@+id/etCategoria"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:background="@drawable/descricao"
         app:layout_constraintTop_toBottomOf="@id/txtDoacoes"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtDoacoes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/Spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
         />
+
+
 
     <TextView
         android:id="@+id/txtOqDoar"

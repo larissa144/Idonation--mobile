@@ -40,7 +40,7 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginTop="200dp"
+    android:layout_marginTop="180dp"
     />
 
     <TextView
@@ -51,26 +51,22 @@
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/txtFazerDoacao"
         android:layout_marginTop="45dp"
-        app:layout_constraintLeft_toRightOf="@id/mockOng"
+        app:layout_constraintLeft_toRightOf="@id/txtFazerDoacao"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintRight_toLeftOf="@id/txtFazerDoacao"
         android:layout_marginLeft="20dp"
     />
 
-    <Spinner
-        android:id="@+id/mockOng"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="240dp"
-        android:alpha="0.4"
-        android:entries="@array/name_mockOngs"
-        app:layout_constraintHorizontal_bias="0.300"
-        app:layout_constraintLeft_toRightOf="@id/txtFazerDoacao"
+    <EditText
+        android:id="@+id/etRazaoSocial"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:background="@drawable/descricao"
         app:layout_constraintTop_toBottomOf="@id/txtRazaoSocio"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtRazaoSocio"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/Spinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
         />
 
     <TextView
@@ -78,29 +74,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name_destinado"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/mockOng"
-        app:layout_constraintLeft_toRightOf="@id/mockOng"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@id/etRazaoSocial"
+        app:layout_constraintLeft_toRightOf="@id/etRazaoSocial"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
      />
 
-    <Spinner
-        android:id="@+id/mockDestinados"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="325dp"
-        android:alpha="0.4"
-        android:entries="@array/name_mockDestinados"
-        app:layout_constraintHorizontal_bias="0.300"
-        app:layout_constraintLeft_toRightOf="@id/txtDestinado"
+    <EditText
+        android:id="@+id/etDestinadoDoacao"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:background="@drawable/descricao"
         app:layout_constraintTop_toBottomOf="@id/txtDestinado"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtDestinado"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/Spinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
         />
+
+
 
     <TextView
         android:id="@+id/txtDoacoes"
@@ -108,28 +102,25 @@
         android:layout_height="wrap_content"
         android:text="@string/name_ItensDoados"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/mockDestinados"
-        app:layout_constraintLeft_toRightOf="@id/mockDestinados"
+        app:layout_constraintTop_toBottomOf="@id/etDestinadoDoacao"
+        app:layout_constraintLeft_toRightOf="@id/etDestinadoDoacao"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         />
 
-    <Spinner
-        android:id="@+id/mockDoacoes"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="420dp"
-        android:alpha="0.4"
-        android:entries="@array/name_mockDoacoes"
-        app:layout_constraintHorizontal_bias="0.300"
-        app:layout_constraintLeft_toRightOf="@id/txtDoacoes"
+    <EditText
+        android:id="@+id/etCategoriaDoacao"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:background="@drawable/descricao"
         app:layout_constraintTop_toBottomOf="@id/txtDoacoes"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtDoacoes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/Spinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
         />
+
 
     <TextView
         android:id="@+id/txtOqDoar"
@@ -145,7 +136,7 @@
         />
 
     <EditText
-        android:id="@+id/etDesc"
+        android:id="@+id/etDescDoacao"
         android:layout_width="369dp"
         android:layout_height="wrap_content"
         android:background="@drawable/descricao"
@@ -161,28 +152,30 @@
         android:layout_width="160dp"
         android:layout_height="40dp"
         android:background="@drawable/btn_entrar_login"
-        app:layout_constraintTop_toBottomOf="@id/etDesc"
-        app:layout_constraintLeft_toRightOf="@id/etDesc"
+        app:layout_constraintTop_toBottomOf="@id/etDescDoacao"
+        app:layout_constraintLeft_toRightOf="@id/etDescDoacao"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="25dp"
         android:text="Finalizar"
         android:textColor="@color/colorWhite"
         android:textSize="15sp"
+        android:onClick="finalizarDoacao"
      />
     <Button
         android:id="@+id/btnCancelar"
         android:layout_width="160dp"
         android:layout_height="40dp"
         android:background="@drawable/btn_entrar_login"
-        app:layout_constraintTop_toBottomOf="@id/etDesc"
-        app:layout_constraintLeft_toRightOf="@id/etDesc"
+        app:layout_constraintTop_toBottomOf="@id/etDescDoacao"
+        app:layout_constraintLeft_toRightOf="@id/etDescDoacao"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="225dp"
         android:text="Cancelar"
         android:textColor="@color/colorWhite"
         android:textSize="15sp"
+        android:onClick="cancelarDoacao"
         />
 
 

@@ -53,23 +53,10 @@
         <item>Lar de idosos alzira</item>
         <item>Casa kidszania</item>
     </string-array>
-    <string name="name_destinado"> Destinado a:</string>
-    <string-array name="name_mockDestinados">
-        <item>Selecione uma opção...</item>
-        <item>Adultos</item>
-        <item>Crianças</item>
-        <item>Idosos</item>
-        <item>Jovens</item>
-        <item>Todas as opções</item>
-    </string-array>
-    <string name="name_ItensDoados"> Selecione o que será doado: </string>
-    <string-array name="name_mockDoacoes">
-        <item>Selecione uma opção...</item>
-        <item>Alimentos</item>
-        <item>Dinheiro</item>
-        <item>Roupas</item>
-        <item>Todas as opções</item>
-    </string-array>
+    <string name="name_destinado"> Destinado a: (Jovens, Crianças, Adultos ou Idosos)</string>
+
+    <string name="name_ItensDoados"> O que será doado: (Alimentos, Roupas ou Dinheiro)</string>
+
     <string name="name_oqDOar"> Descrição do que será doado:</string>
     <string name="name_publicar_doacao"> Publicar doação </string>
 

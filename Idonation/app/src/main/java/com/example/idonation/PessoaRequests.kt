@@ -21,4 +21,13 @@ interface PessoaRequests {
     @Headers("Content-Type: application/json")
     fun postCadPF(cadPf: UsuarioCadastro) : UsuarioCadastro
 
+    @RequestLine("POST /donation/addDonation")
+    @Headers("Content-Type: application/json")
+    fun postPublicarDoacao(publicarDoacao: PublicarDoacaoSelect) : PublicarDoacaoData
+
+    @RequestLine("POST /donation/addDonation")
+    @Headers("Content-Type: application/json")
+    fun postFazerDoacao(fazerDoacao: FazerDoacaoSelect) : PublicarDoacaoData
+
+
 }
