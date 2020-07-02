@@ -101,6 +101,7 @@
         android:background="@drawable/btn_border_radius"
         app:layout_constraintTop_toTopOf="@id/cadDoacoesInteresse1"
         app:layout_constraintLeft_toLeftOf="@id/cadDoacoesInteresse1"
+        android:onClick="irPChat"
         />
 
 <!--    <ImageView-->
