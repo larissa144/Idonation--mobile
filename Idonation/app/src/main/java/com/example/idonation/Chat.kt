@@ -19,7 +19,7 @@ class Chat : AppCompatActivity() {
 
             webView!!.webViewClient = WebViewClient()
             webView!!.webChromeClient = WebChromeClient()
-            webView!!.loadUrl("https://app.gotomeeting.com/index.html?meetingId=285952677")
+            webView!!.loadUrl("https://www.virtualife.com.br/chat/#idonation")
 
             webView!!.webViewClient = object: WebViewClient(){
                 override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
